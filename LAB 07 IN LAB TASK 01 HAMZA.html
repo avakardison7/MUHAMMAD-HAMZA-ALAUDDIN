@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAST National University - Student Portal</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Georgia, "Times New Roman", serif; background: #f3f6f4; color: #1f2d2a; line-height: 1.6; }
+  header { background: #12372f; color: #ffffff; text-align: center; padding: 28px 20px; border-bottom: 5px solid #e0a526; }
+  header h1 { font-size: 2.2rem; letter-spacing: 0.5px; }
+  header p { font-size: 1.2rem; margin-top: 4px; color: #e0a526; }
+  nav { background: #1c5246; text-align: center; padding: 12px; }
+  nav a { color: #ffffff; text-decoration: none; font-size: 1.05rem; margin: 0 18px; padding: 6px 12px; border-radius: 4px; }
+  nav a:hover { background: #e0a526; color: #12372f; }
+  main { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
+  section { background: #ffffff; border: 1px solid #cfdad5; border-radius: 8px; padding: 24px; margin-bottom: 28px; }
+  section h2 { font-size: 1.6rem; color: #12372f; border-bottom: 2px solid #e0a526; padding-bottom: 8px; margin-bottom: 16px; }
+  #home { text-align: center; background: #e6efe9; }
+  #home p { max-width: 650px; margin: 0 auto; font-size: 1.1rem; }
+  .card-row { display: flex; gap: 20px; flex-wrap: wrap; }
+  .card { flex: 1 1 250px; border: 1px solid #b9c9c2; border-left: 6px solid #1c5246; border-radius: 6px; padding: 16px; background: #fafcfb; }
+  .card h3 { font-size: 1.2rem; margin-bottom: 6px; color: #1c5246; }
+  .card p { font-size: 0.98rem; }
+  .faculty .card { text-align: center; border-left: 1px solid #b9c9c2; border-top: 6px solid #e0a526; }
+  .faculty .role { font-style: italic; color: #4b5f59; }
+  #contact p { margin-bottom: 8px; font-size: 1.05rem; }
+  #contact strong { display: inline-block; width: 90px; }
+  footer { background: #12372f; color: #d5e2dc; text-align: center; padding: 18px; font-size: 0.95rem; }
+</style>
+</head>
+<body>
+<header>
+  <h1>FAST National University</h1>
+  <p>Student Portal</p>
+</header>
+<nav>
+  <a href="#home">Home</a>
+  <a href="#courses">Courses</a>
+  <a href="#faculty">Faculty</a>
+  <a href="#contact">Contact</a>
+</nav>
+<main>
+  <section id="home">
+    <h2>Welcome to Student Portal</h2>
+    <p>This portal gives students one place to find course information, meet their faculty, and reach the university offices.
+       Check it regularly for the latest updates about your courses and department.
+       Use the menu above to move between sections.</p>
+  </section>
+  <section id="courses">
+    <h2>Available Courses</h2>
+    <div class="card-row">
+      <div class="card">
+        <h3>Programming Fundamentals</h3>
+        <p>Introduces problem solving, control structures, functions, and arrays using a high-level programming language.</p>
+      </div>
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>Covers building responsive websites with HTML, CSS, and JavaScript, from page structure to interactivity.</p>
+      </div>
+      <div class="card">
+        <h3>Database Systems</h3>
+        <p>Teaches relational design, SQL queries, normalization, and how applications store and retrieve data.</p>
+      </div>
+    </div>
+  </section>
+  <section id="faculty" class="faculty">
+    <h2>Our Faculty</h2>
+    <div class="card-row">
+      <div class="card">
+        <h3>Dr. Ayesha Khan</h3>
+        <p class="role">Professor, Department of Computer Science</p>
+      </div>
+      <div class="card">
+        <h3>Mr.Shayan Ali</h3>
+        <p class="role">Assistant Professor, Department of Software Engineering</p>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> info@fastnu.edu.pk</p>
+    <p><strong>Phone:</strong> +92 21 1234 5678</p>
+    <p><strong>Address:</strong> FAST National University, Karachi, Pakistan</p>
+  </section>
+</main>
+<footer>
+  &copy; 2026 FAST National University. All rights reserved.
+</footer>
+</body>
+</html>

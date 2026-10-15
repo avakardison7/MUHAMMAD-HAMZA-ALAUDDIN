@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Layout 1 - Two-Column Layout</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Arial, Helvetica, sans-serif; background: #f4f4f0; color: #222; line-height: 1.6; }
+  .page { max-width: 1000px; margin: 0 auto; }
+  .top { background: #2b2d42; color: #fff; padding: 20px 24px; }
+  .top h1 { font-size: 1.6rem; }
+  .top p { font-size: 0.95rem; color: #c9cbe0; }
+  .columns { display: flex; gap: 20px; padding: 20px 0; }
+  .sidebar { flex: 0 0 240px; background: #ffffff; border: 1px solid #d6d6cf; padding: 18px; align-self: flex-start; }
+  .sidebar h3 { margin-bottom: 10px; color: #2b2d42; }
+  .sidebar ul { list-style: none; }
+  .sidebar li { padding: 8px 0; border-bottom: 1px solid #ecece6; }
+  .sidebar a { text-decoration: none; color: #2b2d42; }
+  .sidebar a:hover { color: #d9482b; }
+  .content { flex: 1; background: #ffffff; border: 1px solid #d6d6cf; padding: 24px; }
+  .content h2 { margin-bottom: 10px; color: #2b2d42; }
+  .content p { margin-bottom: 14px; }
+  .banner { background: #d9482b; color: #fff; padding: 40px 20px; margin-bottom: 18px; text-align: center; font-size: 1.2rem; }
+  .bottom { background: #2b2d42; color: #c9cbe0; text-align: center; padding: 14px; font-size: 0.9rem; }
+  @media (max-width: 700px) { .columns { flex-direction: column; } .sidebar { flex: none; width: 100%; } }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="top">
+    <h1>Layout 1: Two-Column Layout</h1>
+    <p>A narrow sidebar on the left and the main content on the right.</p>
+  </div>
+  <div class="columns">
+    <div class="sidebar">
+      <h3>Topics</h3>
+      <ul>
+        <li><a href="#">HTML Basics</a></li>
+        <li><a href="#">CSS Styling</a></li>
+        <li><a href="#">Flexbox</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">Projects</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="banner">Learn Web Development Step by Step</div>
+      <h2>Why use a two-column layout?</h2>
+      <p>A two-column layout separates navigation from content. The sidebar stays short and easy to scan, while the wide column gives room for reading.</p>
+      <p><i>It is common on blogs, documentation sites,</i> and dashboards because readers always know where to look for links and where to look for the main text.</p>
+    </div>
+  </div>
+  <div class="bottom">Two-Column Layout example</div>
+</div>
+</body>
+</html>

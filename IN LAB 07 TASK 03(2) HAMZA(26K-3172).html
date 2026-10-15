@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Layout 2 - Card or Block Layout</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Trebuchet MS", Arial, sans-serif; background: #0f2a3d; color: #1b2a35; line-height: 1.5; }
+  .header { text-align: center; color: #fff; padding: 36px 20px 20px; }
+  .header h1 { font-size: 2rem; }
+  .header p { color: #9fc3d9; margin-top: 6px; }
+  .grid { max-width: 1000px; margin: 0 auto; padding: 20px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .card { background: #fff; border-radius: 10px; overflow: hidden; }
+  .card .thumb { height: 110px; display: flex; align-items: center; justify-content: center; font-size: 2.4rem; font-weight: bold; color: #fff; }
+  .card .body { padding: 16px; }
+  .card h3 { margin-bottom: 6px; }
+  .card p { font-size: 0.95rem; margin-bottom: 12px; }
+  .card a { display: inline-block; text-decoration: none; background: #0f2a3d; color: #fff; padding: 6px 14px; border-radius: 4px; font-size: 0.9rem; }
+  .card a:hover { background: #e07a1f; }
+  .c1 { background: #e07a1f; } .c2 { background: #2a9d8f; } .c3 { background: #6a4c93; }
+  .c4 { background: #d1495b; } .c5 { background: #3d7ea6; } .c6 { background: #7a9e3b; }
+  .footer { text-align: center; color: #9fc3d9; padding: 20px; font-size: 0.9rem; }
+  @media (max-width: 800px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 520px) { .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Layout 2: Card or Block Layout</h1>
+  <p>Content is split into equal blocks arranged in a grid.</p>
+</div>
+<div class="grid">
+  <div class="card"><div class="thumb c1">HTML</div><div class="body"><h3>HTML</h3><p>Builds the structure of a web page.</p><a href="#">Read more</a></div></div>
+  <div class="card"><div class="thumb c2">CSS</div><div class="body"><h3>CSS</h3><p>Controls colors, fonts, and layout.</p><a href="#">Read more</a></div></div>
+  <div class="card"><div class="thumb c3">JS</div><div class="body"><h3>JavaScript</h3><p>Adds behavior and interaction.</p><a href="#">Read more</a></div></div>
+  <div class="card"><div class="thumb c4">DB</div><div class="body"><h3>Databases</h3><p>Stores and retrieves application data.</p><a href="#">Read more</a></div></div>
+  <div class="card"><div class="thumb c5">Git</div><div class="body"><h3>Git</h3><p>Tracks changes and supports teamwork.</p><a href="#">Read more</a></div></div>
+  <div class="card"><div class="thumb c6">UX</div><div class="body"><h3>Design</h3><p>Makes pages clear and easy to use.</p><a href="#">Read more</a></div></div>
+</div>
+<div class="footer">Card or Block Layout example</div>
+</body>
+</html>
